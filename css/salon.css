@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+.mainvisual{
+  padding: 0 35px;
+}
+
+.slick-prev{
+   z-index: 2;
+   left: -2px;
+}
+
+.slick-next{
+   z-index: 2;
+   right: 8px;
+}
+
+.slick-prev:before, .slick-next:before{
+  font-size: 30px;
+}
+
+.slider_pic{
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+
+.salon_area{
+  padding: 0 35px 50px;
+  margin-top: 60px;
+}
+
+.google iframe{
+  width: 100%;
+  height: 40vh;
+}
+
+.salon-detail{
+  margin-top: 20px;
+}
+
+.salon-detail p{
+  font-size: .9rem;
+}
+
+.salon-detail_txt + .salon-detail_txt{
+  margin-top: 10px;
+}
+
+/* PCディスプレイ */
+
+@media(min-width:820px){
+
+  .mainvisual .wrapper{
+    max-width: 1000px;
+  }
+  
+  .slider_pic{
+    height: 60vh;
+  }
+
+  .salon_area .wrapper{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .google{
+    width: 72%;
+  }
+  
+  .salon-detail{
+    margin-top: 0px;
+  }
+  
+  .salon-detail p{
+    font-size: 1.2rem;
+  }
+  
+  .salon-detail_txt + .salon-detail_txt{
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+.style-area{
+  padding: 0 35px;
+}
+
+.style-area-btn-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.style-btn{
+  padding: 15px 0;
+  width: calc((100% - 30px) / 2);
+  text-align: center;
+  color: #d9aacd;
+  border: #d9aacd 1px solid;
+  cursor: pointer;
+}
+
+.style-btn:hover{
+  background-color: #d9aacd;
+  color: #fff;
+}
+
+.semi-long-btn,
+.long-btn,
+.all-btn{
+  margin-top: 20px;
+}
+
+.style-area-pic{
+  margin-top: 50px;
+}
+
+.style-area-pic-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-pic{
+  width: calc((100% - 20px) / 2);
+  height: 200px;
+  object-fit: cover;
+}
+
+.medium,.semi-long,
+.long,.all{
+  display: none;
+}
+
+.all .image-pic{
+  margin-top: 20px;
+}
+.all .medium{
+  object-position: 61%;
+}
+
+.all .long{
+  object-position: 58%;
+}
+
+/* PCディスプレイ */
+
+@media(min-width:820px){
+
+  .style-area{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .style-btn{
+    width: 45%;
+    font-size: 1.2rem;
+  }
+  
+  .image-pic{
+    height: 350px;
+    object-position: center top;
+  }
+
+}

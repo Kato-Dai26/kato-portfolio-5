@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAIR-SALON</title>
+  <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/staff.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_flex">
+      <h1>
+        <img class="logo" src="img/logo2.png" alt="ロゴ">
+      </h1>
+      <div class="web_yoyaku">
+        <a href="https://beauty.hotpepper.jp/top/">WEB予約</a>
+      </div>
+      <nav class="header_nav">
+        <div class="nav_menu_area">
+          <span class="nav_menu"></span>
+          <span class="nav_menu"></span>
+          <span class="nav_menu"></span>
+        </div>
+        <ul class="header_nav_list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="style.html">Style</a></li>
+          <li><a href="salon.html">Salon</a></li>
+          <li><a href="staff.html">Staff</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="site-title">staff</h2>
+    <div class="staff-area">
+      <ul class="staff-area-list">
+        <li class="staff-area-box">
+          <div class="staff-area-pic">
+            <a href="staff_sato.html">
+              <img src="img/staff1.jpg" alt="スタッフ">
+            </a>
+          </div>
+          <h3>佐藤 〇〇</h3>
+          <p>店長/スタイリスト</p>
+        </li>
+        <li class="staff-area-box">
+          <div class="staff-area-pic">
+            <a href="staff_suzuki.html">
+              <img class="suzuki" src="img/staff2.jpg" alt="スタッフ">
+            </a>
+          </div>
+          <h3>鈴木 〇〇</h3>
+          <p>スタイリスト</p>
+        </li>
+        <li class="staff-area-box mt">
+          <div class="staff-area-pic">
+            <a href="staff_takahashi.html">
+              <img class="takahashi"  src="img/staff3.jpg" alt="スタッフ">
+            </a>
+          </div>
+          <h3>高橋 〇〇</h3>
+          <p>スタイリスト</p>
+        </li>
+        <li class="staff-area-box mt">
+          <div class="staff-area-pic">
+            <a href="staff_tanaka.html">
+              <img src="img/staff4.jpeg" alt="スタッフ">
+            </a>
+          </div>
+          <h3>田中 〇〇</h3>
+          <p>アシスタント</p>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_btn wrapper">
+      <a href="https://beauty.hotpepper.jp/top/" class="yoyaku_btn">WEB予約</a>
+    </div>
+    <div class="footer_sns wrapper">
+      <a href=""><img src="img/sns1.jpeg" alt="インスタグラム"></a>
+      <a href=""><img src="img/sns2.jpg" alt="インスタグラム"></a>
+    </div>
+    <small>&copy;2023 06 Hair Salon</small>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $('.nav_menu_area').click(function(){
+          $('.header_nav_list').slideToggle();
+      });
+    });
+
+  </script>
+</body>
+</html>

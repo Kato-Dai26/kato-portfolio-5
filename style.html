@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAIR-SALON</title>
+  <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_flex">
+      <h1>
+        <img class="logo" src="img/logo2.png" alt="ロゴ">
+      </h1>
+      <div class="web_yoyaku">
+        <a href="https://beauty.hotpepper.jp/top/">WEB予約</a>
+      </div>
+      <nav class="header_nav">
+        <div class="nav_menu_area">
+          <span class="nav_menu"></span>
+          <span class="nav_menu"></span>
+          <span class="nav_menu"></span>
+        </div>
+        <ul class="header_nav_list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="style.html">Style</a></li>
+          <li><a href="salon.html">Salon</a></li>
+          <li><a href="staff.html">Staff</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="style-area">
+      <h2 class="site-title">style</h2>
+      <div class="style-area-btn-box">
+        <p class="style-btn short-btn">ショート</p>
+        <p class="style-btn medium-btn">ミディアム</a>
+        <p class="style-btn semi-long-btn">セミロング</a>
+        <p class="style-btn long-btn">ロング</a>
+        <p class="style-btn all-btn">すべて</a>
+      </div>
+      <div class="style-area-pic short">
+        <div class="style-area-pic-box">
+          <img class="image-pic" src="img/style1.jpg" alt="スタイル">
+          <img class="image-pic"  src="img/style2.jpg" alt="スタイル">
+        </div>
+      </div>
+      <div class="style-area-pic medium">
+        <div class="style-area-pic-box">
+          <img class="image-pic" src="img/style3.jpg" alt="スタイル">
+          <img class="image-pic"  src="img/style4.jpg" alt="スタイル">
+        </div>
+      </div>
+      <div class="style-area-pic semi-long">
+        <div class="style-area-pic-box">
+          <img class="image-pic" src="img/style7.jpg" alt="スタイル">
+          <img class="image-pic"  src="img/style8.jpg" alt="スタイル">
+        </div>
+      </div>
+      <div class="style-area-pic long">
+        <div class="style-area-pic-box">
+          <img class="image-pic" src="img/style5.jpg" alt="スタイル">
+          <img class="image-pic"  src="img/style6.jpg" alt="スタイル">
+        </div>
+      </div>
+      <div class="style-area-pic all">
+        <div class="style-area-pic-box">
+          <img class="image-pic"  src="img/style1.jpg" alt="スタイル">
+          <img class="image-pic"  src="img/style2.jpg" alt="スタイル">
+          <img class="image-pic"  src="img/style3.jpg" alt="スタイル">
+          <img class="image-pic"  src="img/style4.jpg" alt="スタイル">
+          <img class="image-pic"  src="img/style5.jpg" alt="スタイル">
+          <img class="image-pic"  src="img/style6.jpg" alt="スタイル">
+          <img class="image-pic"  src="img/style7.jpg" alt="スタイル">
+          <img class="image-pic"  src="img/style8.jpg" alt="スタイル">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_btn wrapper">
+      <a href="https://beauty.hotpepper.jp/top/" class="yoyaku_btn">WEB予約</a>
+    </div>
+    <div class="footer_sns wrapper">
+      <a href=""><img src="img/sns1.jpeg" alt="インスタグラム"></a>
+      <a href=""><img src="img/sns2.jpg" alt="ツイッター"></a>
+    </div>
+    <small>&copy;2023 06 Hair Salon</small>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $('.style-btn').click(function(){
+        var num =$('.style-btn').index(this);
+        $('.style-area-pic').hide();
+        $('.style-area-pic').eq(num).show();
+      });
+      
+      $('.nav_menu_area').click(function(){
+          $('.header_nav_list').slideToggle();
+      });
+    });
+  </script>
+</body>
+</html>

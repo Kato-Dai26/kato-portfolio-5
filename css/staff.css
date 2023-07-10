@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+.staff-area{
+  padding: 0 35px;
+}
+
+.staff-area-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.staff-area-box{
+  width: calc((100% - 20px) / 2);
+  text-align: center;
+}
+
+.mt{
+  margin-top: 50px;
+}
+
+.staff-area-pic img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.staff-area-pic img:hover{
+  background-color: #fff;
+  opacity: .5;
+}
+
+.suzuki{
+  object-position: right;
+}
+
+.staff-area-box h3{
+  margin: 10px 0;
+}
+
+.staff-area-box h3,p{
+  font-size: .8rem;
+}
+
+/* PCディスプレイ */
+
+@media(min-width:820px){
+
+  .staff-area{
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .staff-area-pic img{
+    height: 350px;
+    object-fit: cover;
+    object-position: center top;
+  }
+  
+  .staff-area-box h3,p{
+    font-size: 1.2rem;
+  }
+}

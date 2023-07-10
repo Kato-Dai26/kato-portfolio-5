@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+.menu-desc{
+  padding: 0 35px;
+}
+
+.menu-desc p + p{
+  margin-top: 20px;
+}
+
+.menu-list{
+  padding: 0 35px;
+  margin-top: 50px;
+}
+
+.menu-list h3{
+  padding-left: 15px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  border-left: 10px solid #d9aacd;
+  font-size: 1.3rem;
+}
+
+.menu-list-box{
+  background-color: #FFF6F2;
+}
+
+.menu-list-box:nth-child(odd){
+  background-color: #FFEFE8;
+}
+
+.menu-list dl{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 18px;
+  border-bottom: 1px solid #333;
+}
+
+
+.menu-list dt{
+  font-weight: normal;
+}
+
+.menu-list p{
+  padding: 25px 18px;
+}
+
+/* PCディスプレイ */
+
+@media(min-width:820px){
+
+  .menu-desc, .menu-list{
+    max-width: 900px;
+    margin: 50px auto 0;
+    width: 100%;
+  }
+
+  .menu-list h3{
+    font-size: 1.5rem;
+  }
+
+  .menu-list dl{
+    font-size: 1.2em;
+  }
+  
+  .menu-list p{
+      font-size: 1.1rem;
+  }
+}
