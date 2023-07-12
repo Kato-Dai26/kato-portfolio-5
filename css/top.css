@@ -211,7 +211,7 @@
 
 /* PCディスプレイ */
 
-@media(min-width:820px){
+@media(min-width:550px){
 
   .mainvisual{
     height: 90vh;

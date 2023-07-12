@@ -42,8 +42,7 @@
 
 .image-pic{
   width: calc((100% - 20px) / 2);
-  height: 200px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .medium,.semi-long,
@@ -54,17 +53,10 @@
 .all .image-pic{
   margin-top: 20px;
 }
-.all .medium{
-  object-position: 61%;
-}
-
-.all .long{
-  object-position: 58%;
-}
 
 /* PCディスプレイ */
 
-@media(min-width:820px){
+@media(min-width:550px){
 
   .style-area{
     max-width: 1000px;
@@ -75,11 +67,6 @@
   .style-btn{
     width: 45%;
     font-size: 1.2rem;
-  }
-  
-  .image-pic{
-    height: 350px;
-    object-position: center top;
   }
 
 }

@@ -34,6 +34,7 @@
   justify-content: space-between;
   padding: 25px 18px;
   border-bottom: 1px solid #333;
+  font-size: 0.8rem;
 }
 
 
@@ -43,11 +44,12 @@
 
 .menu-list p{
   padding: 25px 18px;
+  font-size: 0.8rem;
 }
 
 /* PCディスプレイ */
 
-@media(min-width:820px){
+@media(min-width:550px){
 
   .menu-desc, .menu-list{
     max-width: 900px;
@@ -60,7 +62,7 @@
   }
 
   .menu-list dl{
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
   
   .menu-list p{

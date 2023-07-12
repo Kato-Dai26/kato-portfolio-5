@@ -44,7 +44,7 @@
 
 /* PCディスプレイ */
 
-@media(min-width:820px){
+@media(min-width:500px){
 
   .staff-area{
     max-width: 1000px;
